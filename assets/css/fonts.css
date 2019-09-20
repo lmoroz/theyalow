@@ -10,17 +10,6 @@
 }
 
 @font-face {
-  font-family: 'Segoe WP';
-  src: url('../fonts/SegoeWP.eot');
-  src: url('../fonts/SegoeWP.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/SegoeWP.woff2') format('woff2'),
-  url('../fonts/SegoeWP.woff') format('woff'),
-  url('../fonts/SegoeWP.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Lucida Sans';
   src: url('../fonts/LucidaSans-Italic.eot');
   src: url('../fonts/LucidaSans-Italic.eot?#iefix') format('embedded-opentype'),
@@ -39,17 +28,6 @@
   url('../fonts/Asap-Regular.woff') format('woff'),
   url('../fonts/Asap-Regular.ttf') format('truetype');
   font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Segoe WP';
-  src: url('../fonts/SegoeWP-Light.eot');
-  src: url('../fonts/SegoeWP-Light.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/SegoeWP-Light.woff2') format('woff2'),
-  url('../fonts/SegoeWP-Light.woff') format('woff'),
-  url('../fonts/SegoeWP-Light.ttf') format('truetype');
-  font-weight: 300;
   font-style: normal;
 }
 
@@ -192,6 +170,30 @@
   url('../fonts/SegoeUI/SegoeUI-Light.woff2') format('woff2'),
   url('../fonts/SegoeUI/SegoeUI-Light.woff') format('woff'),
   url('../fonts/SegoeUI/SegoeUI-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Segoe WP';
+  src: url('../fonts/SegoeWP.eot');
+  src: url('../fonts/SegoeWP.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SegoeWP.woff2') format('woff2'),
+  url('../fonts/SegoeWP.woff') format('woff'),
+  url('../fonts/SegoeWP.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe WP';
+  src: url('../fonts/SegoeWP-Light.eot');
+  src: url('../fonts/SegoeWP-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SegoeWP-Light.woff2') format('woff2'),
+  url('../fonts/SegoeWP-Light.woff') format('woff'),
+  url('../fonts/SegoeWP-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }

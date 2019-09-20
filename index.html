@@ -10,7 +10,25 @@
 </head>
 <body>
 <header class="header">
-
+  <img class="header__logo" src="assets/images/logo.svg" alt="TheYalow Logo">
+  <h1 class="header__title">TheYalow</h1>
+  <nav class="header__navbar">
+    <ul class="header__navbar-wrapper">
+      <li class="header__navbar__icon-about-us">
+        <a href="#about-us">
+          <span class="icon"></span>
+          About Us</a></li>
+      <li class="header__navbar__icon-services">
+        <a href="#services">
+          <span class="icon"></span>
+          Services</a></li>
+      <li class="header__navbar__icon-contacts">
+        <a href="#contacts">
+          <span class="icon"></span>
+          Contact
+        </a></li>
+    </ul>
+  </nav>
 </header>
 <main>
   <section class="slider-area">
@@ -43,7 +61,7 @@
       <div class="slider-controls__right"></div>
     </div>
   </section>
-  <aside class="icon-area">
+  <aside class="icon-area" id="services">
     <ul class="icon-area-wrapper">
       <li class="icon-wrapper icon-better-design">
         <span class="icon"></span>
@@ -58,8 +76,8 @@
       </li>
     </ul>
   </aside>
-  <section class="news_area"></section>
-  <section class="demo_area">
+  <section class="news_area" id="about-us"></section>
+  <section class="demo_area" id="contacts">
 
   </section>
 </main>
