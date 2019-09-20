@@ -14,13 +14,48 @@
 </header>
 <main>
   <section class="slider-area">
+    <div class="slider-wrapper">
+      <div class="slider-item">
+        <div class="slider-item__video">
+          <video id="player" class="player" width="549" height="327"
+                 poster="./assets/images/player-cover.png">
+            <source src="./assets/fullmovie640x360.mp4" type='video/mp4'>
+            Video unavailable
+          </video>
+          <div class="controls-overlay">
+            <div class="activecontrols">
+              <div class="track">
+                <div class="progress"></div>
+              </div>
+              <div class="soundonof-button"></div>
+              <div class="play-button"></div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-item__title">
+          <p class="slider-item__title__str-1">The cool</p>
+          <p class="slider-item__title__str-2">The minimal</p>
+        </div>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <div class="slider-controls__left"></div>
+      <div class="slider-controls__right"></div>
+    </div>
   </section>
   <aside class="icon-area">
     <ul class="icon-area-wrapper">
-      <li class="icon-wrapper icon-better-design"><span class="icon"></span><span class="icon-text">Better Design</span></li>
-      <li class="icon-wrapper icon-customize"><span class="icon"></span><span class="icon-text">Customise</span>
+      <li class="icon-wrapper icon-better-design">
+        <span class="icon"></span>
+        <span class="icon-text">Better Design</span></li>
+      <li class="icon-wrapper icon-customize">
+        <span class="icon"></span>
+        <span class="icon-text">Customise</span>
       </li>
-      <li class="icon-wrapper icon-its-free"><span class="icon"></span><span class="icon-text">Its free</span></li>
+      <li class="icon-wrapper icon-its-free">
+        <span class="icon"></span>
+        <span class="icon-text">Its free</span>
+      </li>
     </ul>
   </aside>
   <section class="news_area"></section>
@@ -34,5 +69,6 @@
     <span class="footer__copyright">TheYalow</span>
   </div>
 </footer>
+<script src="./assets/player.js"></script>
 </body>
 </html>
