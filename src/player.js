@@ -1,10 +1,10 @@
 const player           = document.querySelector('#player');
-const controls_overlay = document.querySelector('.slider-item .controls-overlay');
+const controls_overlay = document.querySelector('.slider-item__video');
 const progress_handler = controls_overlay.querySelector('.progress');
 const sound_toggle     = controls_overlay.querySelector('.soundonoff-button');
 
 const news_player           = document.querySelector('#news-item-video-player');
-const news_controls_overlay = document.querySelector('.news-item-video .controls-overlay');
+const news_controls_overlay = document.querySelector('.news-item-video');
 
 const player_toggle = function(event) {
   event.stopImmediatePropagation();
@@ -24,13 +24,13 @@ const progress_update = function(event) {
 
 const sound_onoff = function(event) {
   event.stopImmediatePropagation();
-  player.volume = (controls_overlay.classList.contains('soundof')) ? 1 : 0;
-  controls_overlay.classList.toggle('soundof', player.volume === 0);
+  player.volume = (controls_overlay.classList.contains('soundoff')) ? 1 : 0;
+  controls_overlay.classList.toggle('soundoff', player.volume === 0);
   localStorage.setItem('theyalow-volume', player.volume);
 };
 const sound_init = function() {
   player.volume = localStorage.getItem('theyalow-volume') || 1;
-  controls_overlay.classList.toggle('soundof', player.volume === 0);
+  controls_overlay.classList.toggle('soundoff', player.volume === 0);
 };
 
 const news_player_toggle = function(event) {
@@ -44,9 +44,6 @@ const news_player_playstate_update = function(event) {
   news_controls_overlay.classList.toggle('play', !news_player.paused);
 };
 
-
-
-console.log({player,controls_overlay,sound_toggle,news_player,news_controls_overlay});
 
 controls_overlay.addEventListener('click', player_toggle);
 player.addEventListener('play', playstate_update);

@@ -1,4 +1,10 @@
 @media screen and (max-width: 640px) {
+
+    :root {
+        --icon-font-size: 23px;
+    }
+
+
     body {
         background: #ffffff;
         min-width: 640px;
@@ -26,10 +32,11 @@
     }
 
     .header {
-        box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.4);
+        filter: drop-shadow(0 1px 1px rgba(0,0,0,0.6));
         position: absolute;
         top: 0;
         z-index: 10;
+        width: 100%!important;
     }
 
     .header, .title-wrapper, .header-wrapper, .header__navbar-wrapper {
@@ -66,22 +73,49 @@
         line-height: 62px;
     }
 
+    .header__navbar__icon-about-us .icon {
+        width: 24px;
+        background-size: 24px 22px;
+    }
     .header__navbar__icon-about-us a {
         padding-left: 16%;
+        font-size: 19px;
     }
 
+
+    .header__navbar__icon-services .icon {
+        width: 22px;
+        background-size: 22px 22px;
+    }
     .header__navbar__icon-services a {
         padding-left: 8%;
+        font-size: 19px;
     }
 
+    .header__navbar__icon-contacts .icon {
+        width: 28px;
+        background-size: 28px 21px;
+    }
     .header__navbar__icon-contacts a {
         padding-left: 7%;
+        font-size: 19px;
     }
 
     main {
         margin-top: 62px;
     }
 
+    .slider-item__video {
+        background: url("../images/player-cover-mobile.png") no-repeat center;
+    }
+
+    .slider-item__video .player {
+        opacity: 0;
+    }
+
+    .slider-item__video.play .player {
+        opacity: 1;
+    }
 
     .slider-area, .slider-item__video, .slider-item__video .player, .slider-item__video .controls-overlay {
         height: 327px;
@@ -103,11 +137,47 @@
         box-shadow: 0 -1px 0 3.5px rgba(255, 255, 255, 0.3), 0 -1px 0 8px rgba(255, 255, 255, 0.3);
         height: 174px;
     }
+    .icon-wrapper {
+        border-color: transparent!important;
+    }
+
+
+    .icon-better-design .icon {
+        background-size: 90px 62px;
+        height: 76px;
+        margin-right: 35px;
+    }
+
+
+    .icon-customize .icon {
+        background-size: 70px 67px;
+        height: 70px;
+        margin-top: 15px;
+        margin-left: 16px;
+    }
+    .icon-its-free .icon {
+        background-size: 70px 69px;
+        height: 86px;
+        margin-right: 7px;
+        margin-bottom: 11px;
+    }
+
+
+    .icon-better-design .icon-text {
+        padding-right: 21px;
+    }
+    .icon-customize .icon-text {
+        padding-left: 21px;
+    }
+
+    .icon-its-free .icon-text {
+        padding-left: 23px;
+    }
 
 
     .news-area {
         background: #ffffff;
-        height: 483px;
+        height: 477px;
     }
 
 
@@ -121,7 +191,10 @@
         margin: 5px 0 auto 9px;
         width: 299px;
         height: 232px;
-        line-height: 28px;
+        font-size: 29px;
+        line-height: 33px;
+        letter-spacing: 0.15px;
+        padding: 16.2px 35.3px 33.8px 27.6px;
     }
 
     .news-area__news-cards_card-video {
@@ -148,6 +221,7 @@
     }
 
     .tweets-item {
+        border-radius: 10px;
         opacity: .8;
         margin-bottom: 14px;
         height: 43px;
@@ -160,7 +234,7 @@
         padding-top: 7px;
         letter-spacing: 0.01em;
         line-height: 16px;
-        width: 290px;
+        width: 287px;
         padding-right: 40px;
     }
 
@@ -206,7 +280,8 @@
     }
 
     .demo_area {
-        height: 462px
+        height: 468px;
+        background: #474747;
     }
 
     .demo-area-wrapper {
@@ -217,16 +292,21 @@
     .demo-area-wrapper > h2 {
         font-family: 'Open Sans', sans-serif;
         grid-area: header;
-        padding: 25px 10px 0 0;
+        padding: 31px 10px 0 0;
         letter-spacing: -0.99pt;
     }
-    .demo-area-wrapper >img {
+    .demo-area-wrapper .demo-area-image {
         grid-area: picture;
-        margin: 73px 0 0 16px;
+        margin: 76px 0 0 0;
+        height: 299px;
+        background: url("../images/demo-mobile.png") no-repeat center;
+    }
+    .demo-area-image img {
+        display: none;
     }
 
     footer {
-        height: 54px;
+        height: 41px;
     }
 
     .footer__logo {

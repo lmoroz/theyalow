@@ -56,7 +56,7 @@ video {
     transform: translate(-50%, -50%) scale(1.1);
 }
 
-.controls-overlay.play::before {
+.play .controls-overlay::before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(2);
@@ -73,7 +73,7 @@ video {
     transition: transform ease 0.2s;
 }
 
-.controls-overlay.play .activecontrols {
+.play .controls-overlay .activecontrols {
     transform: translateY(0);
 }
 
@@ -128,18 +128,18 @@ video {
     height: 26px;
 }
 
-.controls-overlay.soundof .soundonoff-button {
+.slider-item__video.soundoff .soundonoff-button {
     background: url("../images/sound-of.png") center no-repeat;
 }
 
-.soundonoff-button:hover, .controls-overlay.soundof .soundonoff-button:hover {
+.soundonoff-button:hover, .slider-item__video.soundoff .soundonoff-button:hover {
     background-color: rgba(245, 197, 6, .37);
 }
 
 
-.controls-overlay.play .track,
-.controls-overlay.play .play-button,
-.controls-overlay.play .soundonoff-button {
+.play .controls-overlay .track,
+.play .controls-overlay .play-button,
+.play .controls-overlay .soundonoff-button {
     opacity: 1;
 }
 
