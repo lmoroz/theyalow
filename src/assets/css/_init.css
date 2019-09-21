@@ -9,26 +9,21 @@
     padding: 0;
     color: #000;
     box-sizing: border-box;
-    transition: all 0.2s ease;
+    transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 header,
 main,
 footer {
     max-width: 1300px;
-    min-width: 640px;
     margin: 0 auto;
 }
 
 body {
     background: #ffffff url("../images/header_bg.png") center top no-repeat;
+    min-width: 1300px;
 }
 
-@media screen and (min-width: 640px) {
-    body {
-        min-width: 640px;
-    }
-}
 
 .header-wrapper,
 .slider-item,

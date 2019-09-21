@@ -6,18 +6,24 @@
 }
 
 .header-wrapper {
+    display: grid;
+    grid-template-areas: 'logo nav';
+    height: 168px;
+}
+
+.title-wrapper  {
+    grid-area: logo;
     display: flex;
+    flex-direction: row;
 }
 
 .header__logo {
-    flex: 0 0 83px;
     width: 83px;
     height: 83px;
     margin-top: 28px;
 }
 
 .header__title {
-    flex: 0 0 225px;
     font-size: 41px;
     letter-spacing: 0.34px;
     color: #ffffff;
@@ -32,9 +38,10 @@
 }
 
 .header__navbar-wrapper {
+    grid-area: nav;
     height: 42px;
     margin-top: 70px;
-    margin-left: 25%;
+    margin-left: 36%;
 }
 
 .header__navbar {

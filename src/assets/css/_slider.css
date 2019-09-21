@@ -53,21 +53,6 @@
     line-height: 75px;
 }
 
-@media screen and (max-width: 999px) {
-    .slider-item__title {
-        font-size: 53px;
-        line-height: 53px;
-        margin-top: 63px;
-    }
-}
-
-@media screen and (max-width: 780px) {
-    .slider-item__title {
-        font-size: 35px;
-        line-height: 35px;
-        margin-top: 63px;
-    }
-}
 
 .slider-item__title__str-1 {
     margin-left: -14px;

@@ -15,9 +15,9 @@
 }
 
 .news-area__news-cards {
-    display: flex;
-    flex-direction: row;
     margin-top: 15px;
+    display: grid;
+    grid-template-areas: 'text video twitter';
 }
 .news-area__news-cards>* {
     position: relative;
@@ -27,18 +27,20 @@
     color: #ffffff;
 }
 .news-area__news-cards_card-text {
+    grid-area: text;
     box-sizing: border-box;
     font-family: "Segoe WP Light", "Liberation Sans", "Lucida Sans", Arial, sans-serif;
     font-size: 29px;
+    line-height: 38px;
     letter-spacing: 0.012em;
     color: #ffffff;
     text-align: left;
     font-weight: 100;
     padding: 16px 34px 34px 30px;
     width: 341px;
-    line-height: 38px;
 }
 .news-area__news-cards_card-video {
+    grid-area: video;
     background-color: transparent;
     margin-right: 34px;
 }
@@ -47,6 +49,7 @@
     width: 315px;
 }
 .news-area__news-cards_card-tweet {
+    grid-area: twitter;
     background: #ec9e03 center 58px no-repeat url("../images/twitter.svg");
     width: 329px;
 }
@@ -91,6 +94,7 @@
     font-family: "PT Sans", "Liberation Sans", "Lucida Sans", Arial, sans-serif;
     cursor: pointer;
     line-height: 21px;
+    transition: color ease 0.2s,  background-color ease 0.2s;
 }
 .news-area__news-cards_card-tweet::after {
     bottom: 8px;
@@ -116,7 +120,9 @@
     background-color: #ffffffdd;
 }
 
-
-.news-area__news-cards_card-tweet .tweets {
-    display: none;
+@media screen and (min-width: 641px) {
+    .news-area__news-cards_card-tweet .tweets {
+        display: none;
+    }
 }
+

@@ -10,9 +10,11 @@
 <body>
 <header class="header">
   <div class="header-wrapper">
-    <img class="header__logo" src="assets/images/logo.svg" alt="TheYalow Logo">
-    <h1 class="header__title">TheYalow</h1>
-    <nav class="header__navbar-wrapper">
+    <div class="title-wrapper">
+      <img class="header__logo" src="assets/images/logo.svg" alt="">
+      <h1 class="header__title">TheYalow</h1>
+    </div>
+    <div class="header__navbar-wrapper">
       <ul class="header__navbar">
         <li class="header__navbar__icon-about-us">
           <a href="#about-us">
@@ -30,7 +32,7 @@
             Contact
           </a></li>
       </ul>
-    </nav>
+    </div>
   </div>
 </header>
 <main>
@@ -53,10 +55,10 @@
             </div>
           </div>
         </div>
-        <div class="slider-item__title">
+        <h2 class="slider-item__title">
           <p class="slider-item__title__str-1">The cool</p>
           <p class="slider-item__title__str-2">The minimal</p>
-        </div>
+        </h2>
       </div>
     </div>
     <div class="slider-controls">
@@ -105,9 +107,9 @@
         <div class="news-area__news-cards news-area__news-cards_card-tweet">
           <span class="news-area__news-cards_card-tweet-counter">22</span>
           <div class="tweets">
-            <div class="tweets-item">Daily Mobile UI Design Inspiration #1 via @cssauthor</div>
-            <div class="tweets-item">Daily Mobile UI Design Inspiration #1 via @cssauthor</div>
-            <div class="tweets-item">Daily Mobile UI Design Inspiration #1 via @cssauthor</div>
+            <div class="tweets-item">Daily Mobile UI Design Inspiration #1 <div class="tweet-author">via @cssauthor</div></div>
+            <div class="tweets-item">Daily Mobile UI Design Inspiration #1 <div class="tweet-author">via @cssauthor</div></div>
+            <div class="tweets-item">Daily Mobile UI Design Inspiration #1 <div class="tweet-author">via @cssauthor</div></div>
             <input type="text">
             <button type="submit">Tweet</button>
           </div>
@@ -123,18 +125,17 @@
   <section class="demo_area">
     <div class="demo-area-wrapper">
       <h2>Lorem ipsum dolor sit amet</h2>
-      <div class="demo-area__list">
-        <img src="assets/images/demo-icon.png">
-        <ul>
-          <li>Sed ut perspiciatis unde omnis</li>
-          <li>Lorem ipsum dolor sit amet, con&shy;sectetur adipisicing </li>
-          <li>Sed ut perspiciatis unde omnis</li>
-          <li>Lorem ipsum dolor sit amet, con&shy;sectetur adipisicing </li>
-        </ul>
-      </div></div>
+      <img src="assets/images/demo-icon.png">
+      <ul class="demo-area__list">
+        <li>Sed ut perspiciatis unde omnis</li>
+        <li>Lorem ipsum dolor sit amet, con&shy;sectetur adipisicing</li>
+        <li>Sed ut perspiciatis unde omnis</li>
+        <li>Lorem ipsum dolor sit amet, con&shy;sectetur adipisicing</li>
+      </ul>
+    </div>
   </section>
 </main>
-<footer class="footer">
+<footer class="footer" id="contacts">
   <div class="footer-wrapper">
     <img class="footer__logo" src="assets/images/logo.svg" alt="TheYalow Logo">
     <span class="footer__copyright">TheYalow</span>
