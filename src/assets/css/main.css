@@ -111,7 +111,7 @@ body {
     white-space: nowrap;
 }
 
-.header__navbara:hover {
+.header__navbar a:hover {
     background-color: #fbd53e;
 }
 
