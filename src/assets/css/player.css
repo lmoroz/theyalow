@@ -189,8 +189,22 @@
     height: 233px;
     width: 315px;
     background-color: rgba(245, 197, 6, .11);
-    margin-top: -233px;
+    margin-top: -230px;
     z-index: 3;
     position: relative;
     overflow: hidden;
+}
+
+
+.news-item-video .controls-overlay::before {
+    background: rgba(245, 197, 6, .72) url("../images/play.svg") no-repeat;
+    background-position: 24px 12px;
+    width: 61px;
+    height: 61px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    transition: background-color ease 0.1s, transform ease 0.2s, opacity ease 0.2s;
+    margin-left: 2px;
 }
