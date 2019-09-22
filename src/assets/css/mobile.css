@@ -71,6 +71,7 @@
 
     .header__navbar a {
         line-height: 62px;
+        letter-spacing: 0.005em;
     }
 
     .header__navbar__icon-about-us .icon {

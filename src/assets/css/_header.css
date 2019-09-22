@@ -76,8 +76,9 @@
     line-height: 40px;
     text-decoration: none;
     text-align: center;
-    padding: 0 12.6%;
+    padding: 0 12.5924%;
     white-space: nowrap;
+    letter-spacing: 0.0175em;
 }
 
 .header__navbar a:hover {
