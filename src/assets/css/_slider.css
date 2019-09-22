@@ -55,12 +55,14 @@
 
 
 .slider-item__title__str-1 {
+    display: block;
     margin-left: -14px;
     color: #f5c506;
     letter-spacing: .36px;
 }
 
 .slider-item__title__str-2 {
+    display: block;
     color: #fff;
     letter-spacing: .5px;
 }
