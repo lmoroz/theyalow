@@ -8,6 +8,7 @@
 .header-wrapper {
     display: grid;
     grid-template-areas: 'logo nav';
+    grid-template-columns: 313.203px auto;
     height: 168px;
 }
 
@@ -59,18 +60,22 @@
 }
 
 .header__navbar > * {
+    flex: 1;
     border-right: 1px solid #dcb105;
     height: calc(100% - 1px);
     margin-bottom: 1px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 }
 
 .header__navbar a {
+    flex: 1;
     color: #9b7d08;
     background-color: #f5c506;
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     line-height: 40px;
@@ -91,34 +96,43 @@
 
 .header__navbar__icon-about-us a {
     padding-left: 22%;
+    flex-shrink: 0;
 }
 
 .header__navbar__icon-about-us .icon {
     display: inline-block;
     background: url("../images/about-us.svg") no-repeat left center;
     width: 21px;
+    height: 19px;
     margin: 1px 10px 0 0;
+    flex-shrink: 0;
 }
 
 
 .header__navbar__icon-services a {
     padding-left: 12%;
+    flex-shrink: 0;
 }
 
 .header__navbar__icon-services .icon {
     display: inline-block;
     background: url("../images/services.svg") no-repeat left center;
     width: 19px;
+    height: 19px;
     margin: 1px 8px 0 0;
+    flex-shrink: 0;
 }
 
 .header__navbar__icon-contacts a {
     padding-left: 12%;
+    flex-shrink: 0;
 }
 
 .header__navbar__icon-contacts .icon {
     display: inline-block;
     background: url("../images/contacts.svg") no-repeat left center;
     width: 24px;
+    height: 19px;
     margin: 1px 7px 0 0;
+    flex-shrink: 0;
 }

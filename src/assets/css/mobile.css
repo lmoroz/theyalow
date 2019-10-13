@@ -42,6 +42,9 @@
     .header, .title-wrapper, .header-wrapper, .header__navbar-wrapper {
         height: 62px;
     }
+    .header-wrapper {
+        grid-template-columns: auto auto;
+    }
 
     .title-wrapper {
         background-image: linear-gradient(0deg, #222222 0%, #555555 100%);
@@ -68,6 +71,9 @@
     .header__navbar {
         font-size: 19px;
     }
+    .header__navbar > * {
+        height: 100%;
+    }
 
     .header__navbar a {
         line-height: 62px;
@@ -76,6 +82,7 @@
 
     .header__navbar__icon-about-us .icon {
         width: 24px;
+        height: 22px;
         background-size: 24px 22px;
     }
     .header__navbar__icon-about-us a {
@@ -86,6 +93,7 @@
 
     .header__navbar__icon-services .icon {
         width: 22px;
+        height: 22px;
         background-size: 22px 22px;
     }
     .header__navbar__icon-services a {
@@ -95,6 +103,7 @@
 
     .header__navbar__icon-contacts .icon {
         width: 28px;
+        height: 21px;
         background-size: 28px 21px;
     }
     .header__navbar__icon-contacts a {
